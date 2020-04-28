@@ -14,12 +14,20 @@ public class BaseTests {
 	public void setUp(){
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
 		driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com");
-
+		driver.get(Links.URL);
 
 
 		List<WebElement> links  = driver.findElements(By.tagName("a"));
 		System.out.println(links.size());
+
+
+		driver.findElement(By.linkText("Shifting Content")).click();
+
+		driver.findElement(By.linkText("Example 1: Menu Element")).click();
+
+		List<WebElement> menu = driver.findElements(By.tagName("li"));
+		System.out.println(menu.size() + " menu links");
+
 		System.out.println(driver.getTitle());
 		driver.quit();
 
@@ -29,7 +37,5 @@ public class BaseTests {
 		BaseTests test = new BaseTests();
 		test.setUp();
 	}
-
-
 
 }
