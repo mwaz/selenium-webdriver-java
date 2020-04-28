@@ -25,8 +25,8 @@ public class BaseTests {
 
 		driver.findElement(By.linkText("Example 1: Menu Element")).click();
 
-		List<WebElement> menu = driver.findElements(By.tagName("li"));
-		System.out.println(menu.size() + " menu links");
+		WebElement menu = driver.findElement(By.tagName("li"));
+//		System.out.println(menu.size() + " menu links");
 
 		System.out.println(driver.getTitle());
 		driver.quit();
