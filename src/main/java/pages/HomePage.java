@@ -10,13 +10,13 @@ public class HomePage {
 		this.driver = driver;
 	}
 
-	public void clickLink (String linkText){
+	private void clickLink (String linkText){
 		driver.findElement(By.linkText(linkText)).click();
 	}
 
 	public LoginPage clickFormAuthentication(){
 		clickLink("Form Authentication");
-		return  new LoginPage(driver);
+		return new LoginPage(driver);
 	}
 
 	public DropdownPage clickDropdown (){
