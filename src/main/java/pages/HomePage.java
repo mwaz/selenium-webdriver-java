@@ -24,5 +24,9 @@ public class HomePage {
 		return  new DropdownPage(driver);
 	}
 
+	public ForgotPasswordPage clickForgotPassword (){
+		clickLink("Forgot Password");
+		return  new ForgotPasswordPage(driver);
+	}
 
 }
