@@ -18,5 +18,4 @@ public class DropdownTest  extends BaseTests {
 		assertTrue(selectedOptions.contains(option), "Option not selected");
 
 	}
-
 }
