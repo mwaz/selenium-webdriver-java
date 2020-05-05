@@ -13,6 +13,7 @@ public class BaseTests {
 
 	@BeforeClass
 	public void setUp(){
+		System.setProperty("webdriver.chrome.silentOutput", "true");
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
 		driver = new ChromeDriver();
 		driver.get(Links.URL);
