@@ -18,7 +18,6 @@ public class AlertsPage {
 
 	public void acceptAlert(){
 		driver.switchTo().alert().accept();
-		driver.switchTo().alert().;
 	}
 
 	public String getResult(){
