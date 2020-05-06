@@ -56,4 +56,9 @@ public class HomePage {
 		return new FileUploadPage(driver);
 	}
 
+	public clickWysiwygEditorPage clickWysiwygEditor(){
+		clickLink("WYSIWYG Editor");
+		return new clickWysiwygEditorPage(driver);
+	}
+
 }
