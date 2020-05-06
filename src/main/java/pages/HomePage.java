@@ -61,4 +61,10 @@ public class HomePage {
 		return new clickWysiwygEditorPage(driver);
 	}
 
+	public FramesPage clickFrames(){
+		clickLink("Frames");
+		return new FramesPage(driver);
+	}
+
+
 }

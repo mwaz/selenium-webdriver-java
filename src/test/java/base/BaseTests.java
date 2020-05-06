@@ -23,8 +23,6 @@ public class BaseTests {
 		System.setProperty("webdriver.chrome.silentOutput", "true");
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
 		driver = new ChromeDriver();
-//		driver.get(Links.URL);
-//		homePage = new HomePage(driver);
 		goHome();
 	}
 	@AfterClass
