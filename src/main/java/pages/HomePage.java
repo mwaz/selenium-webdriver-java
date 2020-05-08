@@ -81,5 +81,4 @@ public class HomePage {
 		return new InfiniteScrollPage(driver);
 	}
 
-
 }
